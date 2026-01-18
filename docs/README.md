@@ -41,3 +41,6 @@ This project analyzes student performance using Python and Streamlit to understa
 
 3. Run the dashboard:
 -streamlit run dashboard/app.py
+
+## Live Link 
+-> https://aaftab-student-performance.streamlit.app/
