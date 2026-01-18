@@ -11,7 +11,7 @@ page = st.sidebar.radio(
 )
 
 
-df = pd.read_csv(r"D:\$project\Dashboard\data\StudentPerformanceFactors.csv")
+df = pd.read_csv(r"..\data\StudentPerformanceFactors.csv")
 
 # ---- FILTER ----
 if page == "Overview":
