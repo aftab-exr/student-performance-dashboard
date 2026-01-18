@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_PATH = BASE_DIR / "data" / "StudentPerformanceFactors.csv"
 
 st.set_page_config(page_title="Student Performance Dashboard", layout="wide")
 
@@ -11,7 +16,7 @@ page = st.sidebar.radio(
 )
 
 
-df = pd.read_csv(r"..\data\StudentPerformanceFactors.csv")
+df = pd.read_csv(DATA_PATH)
 
 # ---- FILTER ----
 if page == "Overview":
